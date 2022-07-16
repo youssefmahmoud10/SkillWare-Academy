@@ -1,0 +1,180 @@
+<!-- Load libraries -->
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Raleway'>
+
+
+<style>
+
+    #main
+    {
+        font-family: 'Raleway';
+        text-align: left;
+        background-color: white;
+        padding-top: 100px;
+        margin: -8px
+    }
+
+    #div1
+    {
+        color: black;
+        background-color: white;
+        background-image: url('assets/images/Capture15.PNG');
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: 55%;
+        height: 650px;
+        padding: 30px
+    }
+
+    #div1 h1
+    {
+        font-size: 45px;
+        padding-top: 50px;
+        margin-left: 850px
+    }
+
+    #div1 p
+    {
+        font-size: 24px;
+        margin-left: 850px
+    }
+
+    #div1 button
+    {
+        margin-left: 850px;
+        margin-bottom: 20px
+    }
+
+    #div2
+    {
+        text-align: center;
+        background-color: #F6F6F6;
+        height: 500px;
+        padding: 50px 15px;
+        padding-left: 100px
+    }
+
+    #div2 h1
+    {
+        margin-left: -100px
+    }
+
+    #div3
+    {
+        width: 28%;
+        float: left;
+        margin-right: 50px
+    }
+
+    #div4
+    {
+        color: black;
+        background-color: white;
+        background-image: url('assets/images/Capture17.PNG');
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: 55%;
+        height: 650px;
+        padding: 30px
+    }
+
+    #div4 h1
+    {
+        font-size: 45px;
+        padding-top: 50px;
+        margin-left: 180px
+    }
+
+    #div4 p
+    {
+        font-size: 24px;
+        margin-left: 180px
+    }
+
+    #div4 button
+    {
+        margin-left: 180px
+    }
+
+    button
+    {
+        font-family: 'Raleway';
+        font-size: 24px;
+        color: white;
+        background-color: #027DB4;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        padding: 10px
+    }
+
+    button:hover
+    {
+        background-color: #02A7F0
+    }
+
+    #div5
+    {
+        background-color: #F6F6F6;
+        text-align: center;
+        padding: 20px
+    }
+
+</style>
+
+
+<div id="main">
+
+    <div id="div1" style="background-image: url('assets/images/Capture18.PNG'); background-size: 50%;">
+        <h1>For every student,<br> every classroom. <br>Real results.</h1>
+        <p>We're a nonprofit with the mission to provide a free, world-class education for anyone, anywhere.</p>
+        <button (click)="goSignup()">Learners</button>
+        <button (click)="goSignup()">Teachers</button>
+        <button (click)="goSignup()">Parents</button>
+    </div>
+
+    <div id="div2">
+        <h1>Why SkillWare Academy works</h1><br><br>    
+        <div id="div3">
+            <img src="assets/images/Capture11.PNG">
+            <h4>Personalized learning</h4>
+            <p>Students practice at their own pace, first filling in gaps in their understanding and then accelerating their learning.</p>
+        </div>
+        <div id="div3">
+            <img src="assets/images/Capture12.PNG">
+            <h4>Trusted content</h4>
+            <p>Created by experts, SkillWare Academy's library of trusted practice and lessons covers math, science, and more. Always free for learners and teachers.</p>
+        </div>
+        <div id="div3">
+            <img src="assets/images/Capture13.PNG">
+            <h4>Tools to empower teachers</h4>
+            <p>With SkillWare Academy, teachers can identify gaps in their students' understanding, tailor instruction, and meet the needs of every student.</p>
+        </div>
+    </div>
+
+    <div id="div1">
+        <h1>Differentiate your <br>classroom and engage<br> every student.</h1>
+        <p>We empower teachers to support their entire classroom.<br> 90% of US 
+        teachers who have used SkillWare Academy <br>have found us effective.</p>
+        <button (click)="goSignup()">Teachers, start here</button>
+    </div>
+
+    <div id="div4">
+        <h1>You can learn <br>anything.</h1>
+        <p>Build a deep, solid understanding in math, <br>science, and more.</p>
+        <button (click)="goSignup()">Learners, start here</button>
+    </div>
+
+    <div id="div1" style="background-image: url('assets/images/Capture16.PNG');">
+        <h1>Every child deserves<br> the chance to learn.</h1>
+        <p>Across the globe, 617 million children are missing basic<br> math and reading skills. 
+        We're a nonprofit delivering <br>the education they need, and we need your help. 
+        You can <br>change the course of a child's life.</p>
+        <button (click)="goChance()">Give them the chance</button>
+    </div>
+    
+    <div id="div5">
+        <h1>Key supporters</h1>
+        <img src="assets/images/Capture14.PNG">
+    </div>
+
+</div>

@@ -1,0 +1,141 @@
+<!-- Load libraries -->
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Raleway'>
+
+
+<style>
+
+    #main
+    {
+        font-family: 'Raleway';
+        text-align: center;
+        background-color: #52BEEC;
+        padding: 100px 10px;
+        padding-top: 200px;
+        margin: -7px
+    }
+
+    #div1
+    {
+        text-align: left;
+        color: white;
+        background-color: #0A2A66;
+        width: 25%;
+        height: 550px;
+        display: inline-block;
+        padding: 100px;
+        margin-left: 160px
+    }
+
+    #div2
+    {
+        text-align: left;
+        background-color:#F2F2F2;
+        width: 25%;
+        height: 550px;
+        float: right;
+        padding: 100px;
+        margin-right: 180px
+    }
+
+    button
+    {
+        font-size: 18px;
+        background-color: white;
+        width: 100%;
+        border: 1px solid;
+        border-radius: 5px;
+        cursor: pointer;
+        padding: 14px;
+        margin: 10px 0px
+    }
+
+    button:hover
+    {
+        background-color: #D7D7D7
+    }
+
+    input
+    {
+        width: 92%;
+        border: 1px solid;
+        border-radius: 5px;
+        padding: 14px;
+        margin: 10px 0px
+    }
+
+    span
+    {
+        color: red;
+        font-size: 20px
+    }
+
+    a
+    {
+        color: #027DB4;
+        text-decoration: none
+    }
+
+    a:hover
+    {
+        color: #02A7F0
+    }
+
+    #login
+    {
+        font-weight: bolder;
+        color: white;
+        background-color: #015478      
+    }
+
+    #login:hover
+    {
+        background-color: #02A7F0
+    }
+
+    #login:disabled
+    {
+        color: #666666;
+        background-color: #cccccc;
+        border: 1px solid #999999;
+        cursor: not-allowed
+    }
+
+    #signup
+    {
+        color: #027DB4;
+        background-color:#F2F2F2;
+        border: none
+    }
+
+    #signup:hover
+    {
+        color: #02A7F0
+    }
+
+</style>
+
+
+<div id="main">
+
+    <div id="div1">
+        <h1>Login</h1><br>
+        <p>Good to see you again!<br><br>By logging into SkillWare Academy, you agree<br>to our Terms of use and Privacy Policy.</p>
+    </div>
+
+    <div id="div2">
+        <button>Continue with Google</button><br>
+        <button>Continue with Facebook</button><br>
+        <button>Continue with Apple</button><br><br>
+
+        <form [formGroup]="myForm">
+            <label>Email or username <span>*</span></label><br>
+            <input type="text" [(ngModel)]="var1" formControlName="name">
+            <label>Password <span>*</span></label><br>
+            <input type="password" [(ngModel)]="var2" formControlName="password">
+            <a href="">Forgot password?</a><br><br>
+            <button id="login" [disabled]="myForm.invalid" (click)="goProfile()">Log in</button>
+        </form>
+        <button id="signup" (click)="goSignup()">Create an account</button>        
+    </div>
+    
+</div>

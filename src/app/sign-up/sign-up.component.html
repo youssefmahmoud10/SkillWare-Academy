@@ -1,0 +1,127 @@
+<!-- Load libraries -->
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Raleway'>
+
+
+<style>
+
+    #main
+    {
+        font-family: 'Raleway';
+        text-align: center;
+        background-color: #52BEEC;
+        padding: 100px 10px;
+        padding-top: 200px;
+        margin: -7px
+    }
+
+    #div1
+    {
+        text-align: left;
+        color: white;
+        background-color: #0A2A66;
+        width: 25%;
+        height: 620px;
+        display: inline-block;
+        padding: 100px;
+        margin-left: 160px
+    }
+
+    #div2
+    {
+        text-align: left;
+        background-color:#F2F2F2;
+        width: 25%;
+        height: 620px;
+        float: right;
+        padding: 100px;
+        margin-right: 180px
+    }
+
+    button
+    {
+        font-size: 18px;
+        background-color: white;
+        width: 100%;
+        border: 1px solid;
+        border-radius: 5px;
+        cursor: pointer;
+        padding: 14px;
+        margin: 10px 0px
+    }
+
+    button:hover
+    {
+        background-color: #D7D7D7
+    }
+
+    input
+    {
+        width: 92%;
+        border: 1px solid;
+        border-radius: 5px;
+        padding: 14px;
+        margin: 10px 0px
+    }
+
+    #login
+    {
+        font-weight: bolder;
+        color: white;
+        background-color: #015478      
+    }
+
+    #login:hover
+    {
+        background-color: #02A7F0
+    }
+
+    #login:disabled
+    {
+        color: #666666;
+        background-color: #cccccc;
+        border: 1px solid #999999;
+        cursor: not-allowed
+    }
+
+    #signup
+    {
+        color: #027DB4;
+        background-color:#F2F2F2;
+        border: none
+    }
+
+    #signup:hover
+    {
+        color: #02A7F0
+    }
+
+</style>
+
+
+<div id="main">
+
+    <div id="div1">
+        <h1>Sign up</h1><br>
+        <p>A world class education for anyone, anywhere. 100% free.<br><br>Join SkillWare Academy to get personalized help with what you're studying or to learn something completely new. We'll save all of your progress.<br><br>By signing up for SkillWare Academy, you agree to our Terms of use and Privacy Policy.</p>
+    </div>
+
+    <div id="div2">
+        <p>Join SkillWare Academy</p>
+        <button>Continue with Google</button><br>
+        <button>Continue with Facebook</button><br>
+        <button>Continue with Apple</button><br><br>
+
+        <form [formGroup]="myForm">
+            <label>Enter Email or username</label><br>
+            <input type="text" [(ngModel)]="var1" formControlName="name">
+            <label>Enter Password</label><br>
+            <input type="password" [(ngModel)]="var2" formControlName="password">
+            <label>Enter Password Again</label><br>
+            <input type="password" [(ngModel)]="var3" formControlName="confirmPassword">
+        </form>
+
+        <button id="login" [disabled]="myForm.invalid" (click)="goProfile()">Sign up</button>
+        <button id="signup" (click)="goLogin()">Already have an account?</button>       
+    </div>
+    
+</div>

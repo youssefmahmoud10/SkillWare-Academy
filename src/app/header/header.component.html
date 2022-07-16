@@ -1,0 +1,75 @@
+<!-- Load libraries -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Raleway'>
+
+
+<style>
+    
+    div
+    {
+        background-color: white;
+        width: 1650px;
+        height: 110px;
+        padding: 5px 20px;
+        margin-top: -8px;
+        margin-left: -8px;
+        box-shadow: 0px 10px 500px rgb(227, 227, 227);
+        position: fixed
+    }  
+    
+    input
+    {
+        padding: 5px;
+        margin-right: 3px
+    }
+
+    button
+    {
+        font-size: 25px;
+        font-family: 'Raleway';
+        font-weight: bolder;
+        color: #027DB4; 
+        background-color:white;
+        padding: 15px 25px;
+        margin-right: 5px;
+        border: none;
+        cursor: pointer
+    }
+
+    button:hover
+    {
+        color: #02A7F0   
+    }
+
+    #head
+    {
+        font-size: 55px;
+        color: black;
+        margin-right: 111px
+    }
+
+    #head:hover
+    {
+        color: #027DB4   
+    }
+
+    #search
+    {
+        padding: 5px;
+        margin-right: 152px
+    }
+
+</style>
+
+
+<div>
+    <button (click)="goCourses()">Courses</button>
+    <input type="text" placeholder="Search...">
+    <button id="search"><i class="fa fa-search"></i></button>
+    <button id="head" (click)="goHome()">SkillWare Academy</button>
+    <button (click)="goDonate()">Donate</button>
+    <button (click)="goLogin()">{{loginButton}}</button>
+    <button (click)="goSignup()">{{signupButton}}</button>
+</div>
+
+<router-outlet></router-outlet>
